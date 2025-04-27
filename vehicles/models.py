@@ -25,7 +25,8 @@ class VehicleType(models.Model):
 
     class Meta:
         verbose_name = 'Tipo de Veículo'
-        verbose_plural_name = 'Tipos de Veículos'
+        verbose_name_plural = 'Tipos de Veículos'
+        
 
     def __str__(self):
         return self.name
@@ -81,7 +82,8 @@ class Vehicles(models.Model):
     
     class Meta:
         verbose_name = 'Veículo'
-        verbose_plural_name = 'Veículos'
+        verbose_name_plural = 'Veículos'
+        
 
     def __str__(self):
         return self.license_plate
