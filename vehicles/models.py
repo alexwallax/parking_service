@@ -31,7 +31,7 @@ class VehicleType(models.Model):
     def __str__(self):
         return self.name
     
-class Vehicles(models.Model):
+class Vehicle(models.Model):
     vehicle_type = models.ForeignKey(
         VehicleType,
         on_delete=models.PROTECT,
